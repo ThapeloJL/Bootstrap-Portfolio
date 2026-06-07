@@ -18,6 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta name="theme-color" content="#712cf9" />
     <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -93,7 +94,7 @@
       }
     </style>
   </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
+  <body class="bg-light">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -189,8 +190,9 @@
         </li>
       </ul>
     </div>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
+    <div class="banner-wrap vh-100 vw-100 text-white scrolling">
+      <div class="overlay"></div>
+      <header class="px-5 p-3 text-white fixed-top active">
         <div>
           <h3 class="float-md-start mb-0">Portfolio</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -200,35 +202,215 @@
               href="#"
               >Home</a
             >
-            <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#about-me">About Me</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
-      <main class="px-3">
-        <h1>Cover your page.</h1>
-        <p class="lead">
-          Cover is a one-page template for building simple and beautiful home
-          pages. Download, edit the text, and add your own fullscreen background
-          photo to make it your own.
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
-            >Learn more</a
-          >
-        </p>
+      <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
+        <h1 class="display-1">I am Thapelo Legote</h1>
+        <p id="typed" class="lead"></p>
       </main>
-      <footer class="mt-auto text-white-50">
-        <p>
-          Cover template for
-          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
-          by <a href="https://x.com/mdo" class="text-white">@mdo</a>.
-        </p>
-      </footer>
     </div>
+    <section id="about-me">
+      <div class="container p-5">
+        <div class="card">
+          <div class="card-body">
+              <div class="row p-3">
+                  <div class="col-md-6 col-sm-12">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <img src="/assets/cover.jpg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-7">
+                              <p><strong>Name:</strong> Thapelo Legote</p>
+                              <p><strong>Profile:</strong>Full Stack Developer, Artificial Intelligence Engineer</p>
+                              <p><strong>Email:</strong>thapelolegote6@gmail.com</p>
+                              <p><strong>Phone:</strong>+27 60 641 3459</p>
+                              <p><strong>Skills:</strong>
+                              <span class="badge rounded-pill bg-dark">HTML</span>
+                              <span class="badge rounded-pill bg-dark">CSS</span>
+                              <span class="badge rounded-pill bg-dark">git</span>
+                              <span class="badge rounded-pill bg-dark">javascript</span>
+                              <span class="badge rounded-pill bg-dark">firebase</span>
+                              <span class="badge rounded-pill bg-dark">OOP</span>
+                              <span class="badge rounded-pill bg-dark">ReactJS</span>
+                              <span class="badge rounded-pill bg-dark">Redux</span>
+                              <span class="badge rounded-pill bg-dark">NodeJS</span>
+                              <span class="badge rounded-pill bg-dark">MongoDB</span>
+                              <span class="badge rounded-pill bg-dark">Express</span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <h1><Strong>About me</Strong></h1>
+                      <p class="lead">Aspiring AI & Backend Engineer | Data Analytics & Cybersecurity Foundations | Building Scalable Systems</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container p-5">
+        <h1 class="text-center mb-3"><strong>Projects</strong></h1>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://thapelolegotenetf-clone.netlify.app/" target="_blank" class="btn btn-outline-primary"><i class="bi bi-globe"></i> View Website</a>
+                <a href="https://github.com/ThapeloJL/thapelolegotenetf-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code"></i> View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://thapelolegotenetf-clone.netlify.app/" target="_blank" class="btn btn-outline-primary"><i class="bi bi-globe"></i> View Website</a>
+                <a href="https://github.com/ThapeloJL/thapelolegotenetf-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code"></i> View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://thapelolegotenetf-clone.netlify.app/" target="_blank" class="btn btn-outline-primary"><i class="bi bi-globe"></i> View Website</a>
+                <a href="https://github.com/ThapeloJL/thapelolegotenetf-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code"></i> View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3">
+            <div class="card">
+              <img
+                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Netflix Landing Page</h5>
+                <p class="card-text">Built this with HTML & CSS</p>
+                <a href="https://thapelolegotenetf-clone.netlify.app/" target="_blank" class="btn btn-outline-primary"><i class="bi bi-globe"></i> View Website</a>
+                <a href="https://github.com/ThapeloJL/thapelolegotenetf-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code"></i> View Code</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container p-5">
+        <div class="card p-3">
+          <div class="card-body px-5 text-center">
+            <h1><mark>Let's Connect</mark></h1>
+            <p class="lead">
+              Would love to connect with fellow developers, employers looking
+              for developers, or anyone looking to get web development done.
+            </p>
+            <a
+              class="fs-2"
+              href=""
+              target="_blank"
+              ><i class="bi bi-instagram m-2"></i
+            ></a>
+            <a
+              class="fs-2"
+              href="https://www.linkedin.com/in/thapelo-legote-421596265/"
+              target="_blank"
+              ><i class="bi bi-linkedin m-2"></i
+            ></a>
+            <a
+              class="fs-2"
+              href="https://github.com/ThapeloJL/ThapeloJL"
+              target="_blank"
+              ><i class="bi bi-github m-2"></i
+            ></a>
+
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter Email Address"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter Name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Enter Subject"
+                />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  aria-label="with textarea"
+                  placeholder="Enter Message"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="../assets/dist/js/bootstrap.bundle.min.js"
       class="astro-vvvwv3sm"
-    ></script>
+    >
+  </script>
+  <script>
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header")
+      header.classList.toggle("scrolling", window.scrollY > 0)
+    } )
+  </script>
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+        // Waits 1000ms after typing "First"
+          strings: ['Fullstack Developer','Machine Learning Engineer.'],
+          typeSpeed: 100,
+          shuffle: true,
+          loop: true,
+      });
+  </script>
   </body>
 </html>
